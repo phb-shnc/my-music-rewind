@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 30px 20px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.bgshape {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 35%;
+    z-index: -1;
+    animation: float 10s ease-in-out infinite alternate;
+}
+
+.bgshape1 {
+    background: #41ff9b;
+    top: -50px;
+    left: -50px;
+}
+
+.bgshape2 {
+    background: #9f4bff;
+    bottom: -50px;
+    right: -50px;
+    animation-delay: 2s;
+}
+
+.bgshape3 {
+    background: #ff2770;
+    top: 30%;
+    right: 10%;
+    animation-delay: 4s;
+}
+
+@keyframes float {
+    from { transform: translate(0, 0); }
+    to { transform: translate(-30px, 40px); }
+}
+
+.hero {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+}
+
+.rainbow-gradient {
+    height: 120px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #41ff9b, #9f4bff, #ff2770);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #d6d6d6;
+    font-size: 1rem;
+}
+
+.slider {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.slide {
+    display: none;
+    background: #121212;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+#s1:checked ~ .slides #slide1,
+#s2:checked ~ .slides #slide2,
+#s3:checked ~ .slides #slide3,
+#s4:checked ~ .slides #slide4,
+#s5:checked ~ .slides #slide5 {
+    display: block;
+}
+
+
+/* TODO: redesign rank text */
+.rank {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #9f4bff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+video {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    background: #000000;
+}
+
+
+/* TODO: redesign title-highlight text */
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+}
+
+.song-info {
+    color: #d6d6d6;
+    font-size: 0.95rem;
+}
+
+.highlight {
+    color: #9f4bff;
+    font-weight: bold;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.arrow {
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+
+.arrow:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .slide {
+        padding: 16px;
+    }
+}

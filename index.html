@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoebe's Top Songs of 2025 Wrapped</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="bgshape bgshape1"></div>
+    <div class="bgshape bgshape2"></div>
+    <div class="bgshape bgshape3"></div>
+
+    <header class="hero">
+        <div class="rainbow-gradient"></div>
+        <h1>Phoebe's Top Songs of 2025 Wrapped</h1>
+        <p class="subtitle">Presenting my most listened tracks of the year</p>
+    </header>
+
+    <!-- TODO: add stats -->
+
+    <main class="slider">
+
+        <input type="radio" name="slider" id="s1" checked>
+        <input type="radio" name="slider" id="s2">
+        <input type="radio" name="slider" id="s3">
+        <input type="radio" name="slider" id="s4">
+        <input type="radio" name="slider" id="s5">
+
+        <div class="slides">
+
+            <!-- SONG 1 -->
+            <div class="slide" id="slide1">
+                <span class="rank">#1</span>
+                <video controls preload="metadata">
+                    <source src="videos/Benson Boone - Mystical Magical (Official Lyric Video) - Benson Boone (720p, h264).mp4" type="video/mp4">
+                    Your browser does not support video playback.
+                </video>
+                <h2 class="title">Mystical Magical</h2>
+                <p class="song-info"><span class="highlight">120 listens</span> • Benson Boone</p>
+                <div class="nav">
+                    <span></span>
+                    <label for="s2" class="arrow">▶</label>
+                </div>
+            </div>
+
+            <!-- SONG 2 -->
+            <div class="slide" id="slide2">
+                <span class="rank">#2</span>
+                <video controls preload="metadata">
+                    <source src="videos/Taylor Swift - Opalite (Visualizer) - Taylor Swift (720p, h264).mp4" type="video/mp4">
+                </video>
+                <h2 class="title">Opalite</h2>
+                <p class="song-info"><span class="highlight">68 listens</span> • Taylor Swift</p>
+                <div class="nav">
+                    <label for="s1" class="arrow">◀</label>
+                    <label for="s3" class="arrow">▶</label>
+                </div>
+            </div>
+
+            <!-- SONG 3 -->
+            <div class="slide" id="slide3">
+                <span class="rank">#3</span>
+                <video controls preload="metadata">
+                    <source src="videos/Satisfied.mp4" type="video/mp4">
+                </video>
+                <h2 class="title">Satisfied</h2>
+                <p class="song-info"><span class="highlight">64 listens</span> • Renée Elise Goldsberry</p>
+                <div class="nav">
+                    <label for="s2" class="arrow">◀</label>
+                    <label for="s4" class="arrow">▶</label>
+                </div>
+            </div>
+
+            <!-- SONG 4 -->
+            <div class="slide" id="slide4">
+                <span class="rank">#4</span>
+                <video controls preload="metadata">
+                    <source src="videos/Taylor Swift - Wood (Visualizer) - Taylor Swift (720p, h264).mp4" type="video/mp4">
+                </video>
+                <h2 class="title">Wood</h2>
+                <p class="song-info"><span class="highlight">60 listens</span> • Taylor Swift</p>
+                <div class="nav">
+                    <label for="s3" class="arrow">◀</label>
+                    <label for="s5" class="arrow">▶</label>
+                </div>
+            </div>
+
+            <!-- SONG 5 -->
+            <div class="slide" id="slide5">
+                <span class="rank">#5</span>
+                <video controls preload="metadata">
+                    <source src="videos/Taylor Swift - The Fate of Ophelia (Official Music Video) - Taylor Swift (720p, h264).mp4" type="video/mp4">
+                </video>
+                <h2 class="title">The Fate of Ophelia</h2>
+                <p class="song-info"><span class="highlight">59 listens</span> • Taylor Swift</p>
+                <div class="nav">
+                    <label for="s4" class="arrow">◀</label>
+                    <span></span>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
